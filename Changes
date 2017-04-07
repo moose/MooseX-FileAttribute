@@ -1,5 +1,7 @@
 Revision history for MooseX-FileAttribute
 
+{{$NEXT}}
+
 0.03      2017-04-07 00:53:42Z
         - dzilify, and move git repository to the GitHub moose organization
 
