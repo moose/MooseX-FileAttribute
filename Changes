@@ -1,1 +1,4 @@
+0.02 Mon Dec 21 22:47:21 CST 2009
+     - fix tests on Win32, etc.
+
 0.01 Initial Release
