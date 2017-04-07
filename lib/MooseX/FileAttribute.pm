@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Moose::Exporter;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use 5.008001;
 
 use MooseX::Types -declare => ['ExistingFile', 'ExistingDir'];
