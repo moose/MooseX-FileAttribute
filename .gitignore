@@ -1,8 +1,6 @@
-META.yml
-Makefile
-Makefile.old
-blib
-inc
-pm_to_blib
-MANIFEST
-MANIFEST.bak
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/MooseX-FileAttribute-*/
+/MooseX-FileAttribute-*.tar.gz

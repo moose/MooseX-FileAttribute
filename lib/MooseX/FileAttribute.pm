@@ -1,4 +1,6 @@
 package MooseX::FileAttribute;
+# ABSTRACT: Sugar for classes that have file or directory attributes
+
 use strict;
 use warnings;
 use Moose::Exporter;
@@ -6,7 +8,7 @@ use Moose::Exporter;
 our $VERSION = '0.03';
 use 5.008001;
 
-use MooseX::Types -declare => ['ExistingFile', 'ExistingDir'];
+use MooseX::Types 0.11 -declare => ['ExistingFile', 'ExistingDir'];
 use MooseX::Types::Moose qw(Str);
 use MooseX::Types::Path::Class qw(File Dir);
 
@@ -56,9 +58,7 @@ sub has_directory {
 
 __END__
 
-=head1 NAME
-
-MooseX::FileAttribute - sugar for classes that have file or directory attributes
+=pod
 
 =head1 SYNOPSIS
 
@@ -124,17 +124,4 @@ The ExistingFile constraint will accept named pipes, ttys,
 directories, etc., as files, as long as what's named exists on disk.
 The ExistingDir constraint is more strict, only allowing directories.
 
-=head1 REPOSITORY AND BUG TRACKER
-
-http://github.com/jrockway/moosex-fileattribute
-
-=head1 AUTHOR
-
-Jonathan Rockway C<< <jrockway@cpan.org> >>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2009 Jonathan Rockway.
-
-This module is Free software.  You can redistribute it under the same
-terms as Perl itself.
+=cut
